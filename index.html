@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숨어있는 펭귄 찾기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload=set()>
+    <div id="title">
+        <img src="./img/img_fail.png" alt="egg">
+        <img src="./img/img_egg.png" alt="egg">
+        <img src="./img/img_fail.png" alt="egg">
+        <h1>숨어있는 펭귄 찾기</h1>
+        <img src="./img/img_fail.png" alt="egg">
+        <img src="./img/img_penguin.png" alt="egg">
+        <img src="./img/img_fail.png" alt="egg">
+
+    </div>
+
+    <div class="container">
+        <div id="game">
+            <div id="menu">
+                <div class="menu-box">
+                    <div>남은 펭귄 수</div>
+                    <div id="remain">-</div>
+                </div>
+                <div class="menu-box">
+                    <div>남은 기회</div>
+                    <div id="fail">-</div>
+                </div>
+                <div class="menu-box">
+                    <div>남은 시간</div>
+                    <div id="time">-</div>
+                </div>
+                <div class="menu-box">
+                    <div>메세지</div>
+                    <div id="message" style="font-size: 16px; font-weight: 500;">-</div>
+                </div>
+                <button onclick="gameStart(5)" id="btn_level_1" class="btn">5 x 5</button>
+                <button onclick="gameStart(6)" id="btn_level_2" class="btn">6 x 6</button>
+                <button onclick="gameStart(7)" id="btn_level_3" class="btn">7 x 7</button>
+                <div id="count"></div>
+            </div>
+
+            <div id="screen">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./game.js">
+
+    </script>
+</body>
+
+</html>
